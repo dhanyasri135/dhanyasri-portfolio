@@ -283,7 +283,6 @@ button[type="submit"]:hover {
   width: 280px;
   height: 280px;
   object-fit: cover;
-  border-radius: 50%;
   border: 3px solid var(--accent-color);
   margin: 1rem auto;
   display: block;
