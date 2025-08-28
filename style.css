@@ -465,3 +465,11 @@ iframe {
   }
 }
 
+.card-row {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.card-row .card {
+  flex: 1;
+}
