@@ -7,19 +7,18 @@
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" type="image/png" href="favicon.png">
-
 </head>
 
 <body class="dark">
     
   <header>
     <nav>
-  <h1>Portfolio</h1>
-  
-  <!-- Hamburger Button -->
-  <button id="menu-toggle" aria-label="Toggle Menu">
-    <i class="fas fa-bars"></i>
-  </button>
+      <h1>Portfolio</h1>
+      
+      <!-- Hamburger Button -->
+      <button id="menu-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
 
   <!-- Navigation Links -->
   <div id="nav-links">
@@ -31,13 +30,12 @@
       <li><a href="#publications">Publications</a></li>
       <li><a href="#presentations">Conference & Symposium Talks</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#hackathons">Hackathons</a></li>
       <li><a href="#leadership">Leadership</a></li>
       <li><a href="#contact">Contact</a></li>
       <li>
-        <a href="Dhanyasri Bolla_Resume.pdf" target="_blank" download>
+        <a href="Dhanyasri_bolla_Resume.pdf" target="_blank" download>
           <i class="fas fa-file-download"></i> Resume
         </a>
       </li>
@@ -45,11 +43,12 @@
   </div>
 </nav>
 
+    <!-- HERO -->
     <section class="hero">
         <img src="Mypic.jpg" alt="Dhanyasri Bolla Profile" class="profile-pic" />
         <h2>
           <p>Dhanyasri Bolla</p>
-          <p>AWS Certified Data Engineer | Graduate Researcher | Engineering Manager</p>
+          <p> Graduate Researcher & Aspiring Engineering Manager</p>
           </h2>
         <p>Passionate about climate innovation, Climate Policy, Data-Driven Decision making, Corporate Finance and Systems Engineering.</p>
       </section>
@@ -57,20 +56,29 @@
   </header>
 
   <main>
+    <!-- ABOUT -->
     <section id="about" class="section">
       <h2>About Me</h2>
-        <p>Hi! I'm Dhanyasri Bolla, a Master's student in Engineering Management at The George Washington University, with a background in Electronics and Communication Engineering from SVNIT, India. I’m passionate about combining technical thinking with strategic decision-making to address complex, real-world problems. </p>
-        
-        <p>My work lies at the intersection of data analysis, systems thinking, and sustainable development. Recently, I’ve been diving deep into climate adaptation research—analyzing how megacities are responding to climate risks and identifying co-benefits in their adaptation strategies. Beyond research, I’ve worked on web development, marketing analytics, and systems architecture projects that showcase my versatility across disciplines. </p>
-        
-        <p>I’m always excited to learn, collaborate, and build meaningful solutions—whether it’s through data, design, or leadership.</p>
-        
-        <p>When I'm not working, you’ll find me exploring urban spaces, planning events with my grad student community,</p>
+      <p>
+        Hi! I'm Dhanyasri Bolla — an M.S. student in Engineering Management at The George Washington University and a Graduate Research Assistant at FEWS Labs (GWU).
+        My work sits at the intersection of climate adaptation, data analytics, and applied policy research.
+      </p>
+      <p>
+        Recently, I’ve built a quantitative framework to analyze climate action plans across <strong>43 global megacities</strong>, mapped adaptation <strong>co-benefits</strong> using the GAMI database (<strong>430+ articles</strong>),
+        and combined statistical methods (chi-square, Cramer’s V, regression) with <strong>LLM-based textual analysis</strong> to extract patterns from policy documents.
+      </p>
+      <p>
+        Beyond research, I’ve worked on web development, marketing analytics, systems architecture, and energy-transition modeling—building tools and insights that are clear, usable, and decision-focused.
+      </p>
+      <p>
+        When I'm not working, you’ll find me exploring urban spaces and planning community events with fellow graduate students.
+      </p>
     </section>
+
+    <!-- EDUCATION -->
     <section id="education" class="section">
       <h2>Education</h2>
       <div class="card-grid">
-    
         <div class="card">
           <h3>🎓 Master of Science in Engineering Management</h3>
           <p><strong>The George Washington University</strong><br>Washington, D.C. | December 2025 | GPA: 3.8/4.0</p>
@@ -79,57 +87,52 @@
             <li>Capstone Project: San Diego Renewable Energy Transition Modeling - Investigated emissions and operational cost impact of transitioning to 60% renewables by 2034, projecting $1.56M in annual savings and 27,000+ metric tons of CO₂ reduction per year</li>
           </ul>
         </div>
-    
+
         <div class="card">
           <h3>🎓 Bachelor of Technology in Electronics & Communications Engineering</h3>
           <p><strong>Sardar Vallabhbhai National Institute of Technology</strong><br>India | May 2023 | GPA: 8.4/10.0</p>
           <ul>
             <li>Focus Areas: Embedded Systems, Digital Communication, Programming in C and Python</li>
-            <li>Capstone Project: 5G waveforms performance analysis over 3D channel model - Evaluated OFDM, FBMC, UFMC modulation techniques; concluded FBMC outperforms in low PAPR and BER</li>
+            <li>Capstone Project: 5G waveforms performance analysis over 3D channel model </li>
           </ul>
         </div>
-    
       </div>
     </section>
-    
 
+    <!-- EXPERIENCE -->
     <section id="experience" class="section">
         <h2>Experience</h2>
         <div class="experience-split">
           <!-- Left: FEWS LABS -->
           <div class="experience-left card">
-            <h3>🔬Graduate Research Assistant | The George Washington University</h3>
-            <p><strong>May 2024 – Present | Washington D.C.</strong></p>
-            
-            <p><strong>Problem:</strong> Cities face mounting climate risks but lack systematic frameworks to evaluate and compare adaptation strategies across different urban contexts.</p>
-            
-            <p><strong>What I Built & Delivered:</strong></p>
+            <h3>🔬FEWS LABS, George Washington University</h3>
+            <p><strong>Graduate Research Assistant</strong><br>May 2024 – Present</p>
             <ul>
-              <li><strong>Megacity Climate Framework:</strong> Analyzed 43 global megacities' climate plans using statistical methods (chi-square, Cramer's V, regression) and LLM pipelines—revealing critical gaps between stated risks and actual infrastructure investments</li>
-              <li><strong>Co-benefits Database:</strong> Coded 430+ research articles to map hidden benefits of climate adaptation (health, economic, biodiversity), identifying patterns that inform smarter policy investments</li>
-              <li><strong>Food Systems Analytics:</strong> Automated USDA data pipelines to calculate regional food self-reliance ratios—delivered CPI-normalized dashboards now used by the Metropolitan Washington Council of Governments' FARM Policy Committee</li>
-              <li><strong>Policy Impact Analysis:</strong> Developed a 14-category qualitative framework analyzing 18 expert interviews to track systemic disruptions in humanitarian food aid programs</li>
+              <li>Conducted a comparative analysis of 48 megacities' climate action plans.</li>
+              <li>Used Python, Excel, and Pandas with chi-square and Cramer’s V for relational insights.</li>
+              <li>Coded 430+ adaptation co-benefits using binary classification for statistical rigor.</li>
+              <li>Applied LLMs to analyze textual data from climate plans and extract patterns.</li>
+              <li>Identified global co-benefit trends (health, equity, biodiversity, food security).</li>
+              <li>Presented research at AGU 2024 and co-authored a forthcoming academic paper.</li>
+              <li>Informed urban policy frameworks for high-density climate-vulnerable cities.</li>
             </ul>
-            
-            <p><strong>Impact:</strong> Research presented at AGU 2024, co-authored publication in Environmental Research: Climate, and insights informing urban resilience policy for high-density cities globally.</p>
+            <p><em>Technologies & Skills:</em> Python, Pandas, Excel, Chi-square Test, LLMs, Data Visualization, Urban Climate Resilience</p>
           </div>
       
           <!-- Right: Other Experiences -->
           <div class="experience-right">
             <div class="card">
-              <h3>🌐 Web Development Intern | Business Web Solutions</h3>
-              <p><strong>June 2022 – August 2022 | India</strong></p>
-              <p><strong>Challenge:</strong> Tourism website had poor user engagement and slow performance across devices.</p>
-              <p><strong>Solution:</strong> Redesigned responsive UI/UX, integrated optimized APIs, and conducted comprehensive cross-browser testing.</p>
-              <p><strong>Results:</strong> 25% increase in user engagement, 30% faster server response times, seamless experience across platforms.</p>
+              <h3>🌐 Business Web Solutions</h3>
+              <p><strong>Web Development Intern</strong> – June 2022 – Aug 2022</p>
+              <p>Enhanced a tourism site’s UX using responsive HTML/CSS/JS design. Integrated APIs, optimized backend, and performed cross-browser testing.</p>
+              <p><em>Technologies & Skills:</em> HTML, CSS, JS, PHP, Responsive Design</p>
             </div>
       
             <div class="card">
-              <h3>📣 Marketing & Operations Intern | Unschool</h3>
-              <p><strong>August 2021 – September 2021 | India</strong></p>
-              <p><strong>Challenge:</strong> Online education platform needed to scale enrollments while improving operational efficiency.</p>
-              <p><strong>Solution:</strong> Led 6-person team executing data-driven marketing campaigns and redesigned student onboarding workflows.</p>
-              <p><strong>Results:</strong> 45% increase in enrollments, 20% better lead conversion, 30% reduction in course delivery time.</p>
+              <h3>📣 Unschool</h3>
+              <p><strong>Marketing & Operations Intern</strong> – Aug 2021 – Sep 2021</p>
+              <p>Led marketing campaigns with a team of 6, increasing course enrollments by 45% and improving lead conversion by 20% through workflow optimization.</p>
+              <p><em>Technologies & Skills:</em> Team Leadership, Campaign Metrics, Digital Strategy</p>
             </div>
           </div>
         </div>
@@ -188,15 +191,15 @@
             <div class="card">
               <h3>Urban Giants Under Threat: Unveiling Climate Vulnerabilities & Adaptive Strategies in Megacities</h3>
               <p>Primary author of a research paper analyzing climate vulnerabilities and adaptation strategies in 43 global megacities.</p>
-              <p>Submitted for possible publication in the Regional Environmental Change Journal</p>
+              <p>Submitted for possible publication in AGU Earth's Future</p>
               <ul>
                 <b>Abstract:</b> With their rapid expansion and escalating population densities, megacities face unprecedented challenges in ensuring climate resilience. Our research examines how megacities worldwide plan to adapt to climate change. Specifically, we evaluate the resilience and adaptive capacity enumerated in 43 global megacity climate reports by categorizing and coding data across five key dimensions: infrastructure systems, climate risks, natural disasters, financial sources, and stakeholder involvement. We analyze trends and relationships between variables across these megacity reports to deduce global trends in these urban areas using statistical analysis. Three key patterns emerge from our analysis of these megacity adaptation plans: (1) there is global convergence on the need for sustainable transportation infrastructure, (2) there is some misalignment between local climate risks and chosen adaptation investments, and (3) we found considerable underrepresentation of local stakeholders in planning processes. By identifying key areas of vulnerability, infrastructure plans, financial backing, and stakeholders, our research underscores gaps in current planning approaches that could be addressed in the future to make megacities safer and more sustainable.
               </ul>
             </div>
             <div class="card">
-              <h3>Patterns and gaps in co-benefit reporting in global adaptation research</h3>
-              <p><strong>Co-Author:</strong> Gore, C., et al. (2026). Environmental Research: Climate.</p>
+              <h3>Uncovering the Hidden Benefits of Adaptation</h3>
               <p>Co-Authored a research paper in association with NIST by coding and categorizing co-benefits from 430+ scientific articles.</p>
+              <p>Submitted for possible publication in Environmental Research: Climate</p>
               <ul>
                 <b>Abstract:</b> Adaptations to extreme weather events are increasing in prevalence across the globe. Adaptation responses can produce cobenefits, which are ancillary positive outcomes beyond the primary objectives of reducing risk and enhancing resilience.
 Despite growing attention to co-benefits in the adaptation literature, systematic analyses across adaptation types, sectors,
@@ -252,43 +255,33 @@ maximize the ancillary benefits of adaptation actions.
         <div class="card-grid">
       
           <div class="card">
-            <h3>📊 What I Can Do: Data & Analytics</h3>
+            <h3>📊 Data Analysis & Programming</h3>
             <ul>
-              <li>Turn messy data into insights using Python (Pandas, NumPy, Matplotlib, Seaborn) and R (Tidyverse, ggplot2, Shiny)</li>
-              <li>Build statistical models and run analyses (chi-square, regression, conjoint analysis) to answer complex questions</li>
-              <li>Create compelling visualizations and interactive dashboards that communicate findings to non-technical stakeholders</li>
-              <li>Handle large-scale data processing with SQL and Spark</li>
+              <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
+              <li>R (Tidyverse, dplyr, ggplot2)</li>
+              <li>SQL, Spark (PySpark)</li>
+              <li>Excel, Jupyter Notebooks</li>
             </ul>
           </div>
-
           <div class="card">
-            <h3>☁️ What I Can Do: Cloud & Data Engineering</h3>
+            <h3>🔬 Research Skills</h3>
             <ul>
-              <li>Design and build serverless data pipelines on AWS (Glue, Lambda, Step Functions) that scale automatically</li>
-              <li>Create data warehouses and lakehouses (Redshift, Athena, S3) optimized for analytics and cost efficiency</li>
-              <li>Automate ETL/ELT workflows handling real-time and batch data from diverse sources (APIs, databases, files)</li>
-              <li><strong>AWS Certified Data Engineer</strong> with production experience in cloud architecture</li>
-            </ul>
-          </div>
-          
-          <div class="card">
-            <h3>🔍 What I Can Do: Research & Analysis</h3>
-            <ul>
-              <li>Synthesize insights from large bodies of academic literature and policy documents</li>
-              <li>Design surveys and research frameworks to answer strategic questions</li>
-              <li>Communicate complex findings through academic papers, posters (AGU 2024), and executive summaries</li>
-              <li>Apply LLMs and NLP to extract structured insights from unstructured text at scale</li>
+              <li>Literature Review, Thematic Coding</li>
+              <li>Comparative Policy Analysis</li>
+              <li>Co-benefit Mapping (GAMI)</li>
+              <li>Poster Presentation (AGU 2024)</li>
             </ul>
           </div>
       
           
       
           <div class="card">
-            <h3>�️ What I Can Do: Systems & Strategy</h3>
+            <h3>🏗️ Systems Engineering</h3>
             <ul>
-              <li>Design system architectures using SysML and model complex stakeholder interactions</li>
-              <li>Evaluate engineering decisions through financial modeling (NPV, IRR, sensitivity analysis)</li>
-              <li>Think holistically about infrastructure, policy, finance, and risk in urban systems</li>
+              <li>SysML (ConOps, OV-1, Functional Decomposition)</li>
+              <li>Capella (Arcadia Methodology)</li>
+              <li>Systems Thinking</li>
+              <li>Trade-off & Architecture Analysis</li>
             </ul>
           </div>
       
@@ -333,31 +326,15 @@ maximize the ancillary benefits of adaptation actions.
           </div>
       
           <div class="card">
-            <h3>🤝 What I Bring: Leadership & Communication</h3>
+            <h3>🤝 Soft Skills</h3>
             <ul>
-              <li>Lead cross-functional teams and manage budgets for large-scale initiatives (250+ stakeholders)</li>
-              <li>Translate technical findings into actionable recommendations for decision-makers</li>
-              <li>Present research at conferences and synthesize complex topics for diverse audiences</li>
+              <li>Leadership & Collaboration</li>
+              <li>Problem Solving & Critical Thinking</li>
+              <li>Public Speaking & Communication</li>
+              <li>Time & Project Management</li>
             </ul>
           </div>
       
-        </div>
-      </section>
-
-      <section id="certifications" class="section">
-        <h2>Certifications</h2>
-        <div class="card-grid">
-          <div class="card">
-            <h3>🏆 AWS Certified Data Engineer – Associate (DEA-C01)</h3>
-            <p><strong>Amazon Web Services</strong></p>
-            <p>Validates expertise in designing, implementing, and optimizing data pipelines, ETL processes, and secure data storage solutions using core AWS services.</p>
-            <ul>
-              <li>Designed and maintained data pipelines for ingestion and transformation</li>
-              <li>Orchestrated data pipelines and monitored environment performance</li>
-              <li>Managed data lifecycle, ensured data quality, and implemented security best practices</li>
-              <li>Proficient in AWS Glue, Redshift, Athena, DynamoDB, S3, Lambda, and related services</li>
-            </ul>
-          </div>
         </div>
       </section>
       
@@ -365,27 +342,11 @@ maximize the ancillary benefits of adaptation actions.
         <h2>Projects</h2>
         <div class="card-grid">
             <div class="card">
-                <h3>⚡ San Diego Renewable Energy Transition Model</h3>
-                <p><strong>Problem:</strong> Cities commit to renewable energy goals but lack quantitative models to predict actual emissions reductions and cost impacts over multi-year transitions.</p>
-                
-                <p><strong>What I Built:</strong> Developed a forecasting model using scaled CAISO operational data (2018-2025) to simulate San Diego's transition to 60% renewable electricity by 2034. Modeled coal-to-renewable shift scenarios and exponential adoption curves reflecting infrastructure realities.</p>
-                
-                <p><strong>Key Findings:</strong> Projected $1.56M annual operational savings and 27,000+ metric tons of CO₂ reduction per year. Demonstrated how decentralized renewables enhance urban resilience to wildfires and grid outages.</p>
-                
-                <p><strong>Impact:</strong> Delivered scalable, data-driven framework for municipal climate and energy transition planning.</p>
+                <h3>🔋 San Diego Renewable Energy Transition</h3>
+                <p><strong>Capstone Project</strong></p>
+                <p>Modeled the impact of transitioning San Diego to 60% renewable electricity using scaled CAISO data. Forecasted CO₂ emissions reduction (30%) and cost savings ($1.56 Million/year) over 2025–2034. Explored how decentralized renewables improve urban resilience to wildfires and outages.</p>
+                <p><em>Technologies & Skills:</em> Python, Pandas, Matplotlib, Excel, Data Modeling, Forecasting, Energy Systems Analysis, Climate Resilience</p>
               </div>
-
-            <div class="card">
-                <h3>🔋 Metadata-Driven Energy & Climate Data Lakehouse (AWS)</h3>
-                <p><strong>Problem:</strong> Energy providers and climate researchers use different data formats (XML, JSON) with inconsistent schemas, making cross-domain analysis nearly impossible. Legacy APIs have strict limitations and authentication requirements.</p>
-                
-                <p><strong>Solution I Built:</strong> Designed a serverless AWS lakehouse architecture that dynamically ingests, transforms, and analyzes energy and weather data without hard-coded logic. Created a custom XML parser to handle schema drift, normalized disparate data into unified Parquet format, and enabled SQL-based analytics to correlate solar radiation with grid load patterns.</p>
-                
-                <p><strong>Technical Approach:</strong> AWS Glue + DynamoDB for metadata-driven ingestion | Python (Boto3) for resilient API handling | Parquet optimization for storage | Athena for cross-domain SQL analysis</p>
-                
-                <p><strong>Outcome:</strong> Automated data pipeline handling multiple source formats, enabling real-time insights into renewable energy impact on grid stability.</p>
-              </div>
-          </div>
 
         
       
@@ -399,12 +360,10 @@ maximize the ancillary benefits of adaptation actions.
           </div>
       
           <div class="card">
-            <h3>� Scootistic DC - Urban Mobility Survey & Analysis</h3>
-            <p><strong>Problem:</strong> DC residents juggle multiple ride-sharing providers (Capital Bikeshare, Lime, Veo) with separate subscriptions, creating friction and reducing adoption of sustainable transportation.</p>
-            
-            <p><strong>Research Approach:</strong> Designed conjoint survey modeling vehicle options, ride duration caps, and pricing structures. Conducted regression analysis with 95% confidence intervals and power analysis (450-500 sample size) to identify optimal service configuration.</p>
-            
-            <p><strong>Recommendation:</strong> Proposed integrated subscription model with platform partnership strategy, backed by quantitative evidence of user preferences for flexible multi-modal access.</p>
+            <h3>📊 Multi-Modal Ride Service Preferences</h3>
+            <p><strong>Marketing Analytics Project</strong></p>
+            <p>Designed and distributed a survey to capture user preferences on pricing, vehicle types, ride caps, and extended fees. Applied conjoint analysis to model user decision-making.</p>
+            <p><em>Technologies & Skills:</em> Survey Design, Conjoint Analysis, R Programming, Excel, User Behavior Modeling</p>
           </div>
       
           <div class="card">
@@ -433,14 +392,10 @@ maximize the ancillary benefits of adaptation actions.
           </div>
           
           <div class="card">
-            <h3>🌍 AI-Powered Climate Adaptation Dashboard</h3>
-            <p><strong>Problem:</strong> Climate adaptation plans are buried in hundreds of pages of PDF documents, making it nearly impossible to quickly compare strategies across cities or extract structured insights.</p>
-            
-            <p><strong>Solution:</strong> Built a full-stack web application using GPT-4 API to automatically parse climate adaptation PDFs, extract structured data (risks, infrastructure, financing, stakeholders), and generate LLM-based recommendations. Created interactive maps and comparison tools for multi-city analysis.</p>
-            
-            <p><strong>Tech Stack:</strong> Flask backend | OpenAI API for NLP | PyMuPDF for document parsing | Leaflet.js for interactive mapping | Bootstrap UI</p>
-            
-            <p><strong>Value:</strong> Transforms weeks of manual policy analysis into minutes of automated insight extraction.</p>
+            <h3>🌍 Climate Adaptation Mapping Dashboard (LLM-Powered)</h3>
+            <p><strong>AI powered Climate adaptation analysis</strong></p>
+            <p>An AI-powered web dashboard that analyzes climate adaptation plans using Large Language Models (LLMs) to extract structured insights from unstructured policy documents. The tool automatically classifies content into four core categories — climate risks, infrastructure systems, financial sources, and stakeholders — and provides LLM-generated summaries of each city's strengths and planning gaps.</p>
+            <p><em>Technologies & Skills:</em> Flask, OpenAI API, PyMuPDF, Geopy, Leaflet.js, Bootstrap, JavaScript, HTML, CSS</p>
           </div>
       
         </div>
@@ -471,14 +426,14 @@ maximize the ancillary benefits of adaptation actions.
       
           <div class="card">
             <h3>🌟 Vice President</h3>
-            <p><strong>Desis Organization, George Washington University</strong><br>October 2024 – January 2026</p>
+            <p><strong>Desis Organization, George Washington University</strong><br>Oct 2024 – Present</p>
             <p>Led planning, budgeting, and community initiatives for 250+ Indian graduate students. Oversaw board recruitment, managed member engagement, and executed cultural programs to strengthen campus inclusivity and connection.</p>
             <p><em>Skills:</em> Leadership, Community Engagement, Project Coordination, Team Management, Event Strategy</p>
           </div>
 
           <div class="card">
             <h3>💰 Financial Officer</h3>
-            <p><strong>Google Developer Student Club, George Washington University</strong><br>October 2024 – January 2026</p>
+            <p><strong>Google Developer Student Club, George Washington University</strong><br>Oct 2024 – Present</p>
             <p>Managed budgeting, fund allocation, and payment tracking for campus events involving 150+ participants. Collaborated with multiple student teams to ensure timely financial planning and vendor coordination while maintaining transparency and cost efficiency.</p>
             <p><em>Skills:</em> Budgeting, Event Planning, Financial Oversight, Collaboration, Reporting</p>
           </div>
@@ -540,35 +495,33 @@ maximize the ancillary benefits of adaptation actions.
     <p>© 2025 Dhanyasri Bolla. All rights reserved.</p>
   </footer>
 
-<!-- Back to Top Button -->
-<button id="back-to-top" title="Back to Top" style="display:none;position:fixed;bottom:32px;right:32px;z-index:1000;padding:12px 18px;border-radius:50%;background:#222;color:#fff;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.2);font-size:22px;cursor:pointer;">
-  <i class="fas fa-arrow-up"></i>
-</button>
+  <!-- Back to Top Button -->
+  <button id="back-to-top" title="Back to Top" style="display:none;position:fixed;bottom:32px;right:32px;z-index:1000;padding:12px 18px;border-radius:50%;background:#222;color:#fff;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.2);font-size:22px;cursor:pointer;">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
-<script>
-  const toggleBtn = document.getElementById('menu-toggle');
-  const navLinks = document.getElementById('nav-links');
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
 
-  toggleBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
 
-  // Back to Top Button Logic
-  const backToTopBtn = document.getElementById('back-to-top');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      backToTopBtn.style.display = 'block';
-    } else {
-      backToTopBtn.style.display = 'none';
-    }
-  });
-  backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-</script>
-
-  
-  
+    // Back to Top Button Logic
+    const backToTopBtn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.style.display = 'block';
+      } else {
+        backToTopBtn.style.display = 'none';
+      }
+    });
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 
 </body>
 </html>
+
