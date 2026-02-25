@@ -7,58 +7,108 @@
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
-<body class="dark">
+<body>
     
-  <header>
-    <nav>
-      <h1>Portfolio</h1>
-      
-      <!-- Hamburger Button -->
-      <button id="menu-toggle" aria-label="Toggle Menu">
-        <i class="fas fa-bars"></i>
-      </button>
+  <!-- Floating Navigation -->
+  <nav class="floating-nav">
+    <div class="nav-brand">
+      <span class="brand-icon">✦</span>
+      <span class="brand-text">DB</span>
+    </div>
+    
+    <a href="Dhanyasri Bolla_Resume.pdf" target="_blank" download class="resume-btn">
+      <i class="fas fa-download"></i> Resume
+    </a>
+    
+    <button id="menu-toggle" aria-label="Toggle Menu">
+      <i class="fas fa-bars"></i>
+    </button>
 
-  <!-- Navigation Links -->
-  <div id="nav-links">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#presentations">Conference & Symposium Talks</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#hackathons">Hackathons</a></li>
-      <li><a href="#leadership">Leadership</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li>
-        <a href="Dhanyasri_bolla_Resume.pdf" target="_blank" download>
-          <i class="fas fa-file-download"></i> Resume
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <div id="nav-links">
+      <a href="#" data-section="hero" class="nav-link active">Home</a>
+      <a href="#" data-section="about" class="nav-link">About</a>
+      <a href="#" data-section="education" class="nav-link">Education</a>
+      <a href="#" data-section="experience" class="nav-link">Experience</a>
+      <a href="#" data-section="research" class="nav-link">Research</a>
+      <a href="#" data-section="publications" class="nav-link">Publications</a>
+      <a href="#" data-section="certifications" class="nav-link">Certifications</a>
+      <a href="#" data-section="presentations" class="nav-link">Presentations</a>
+      <a href="#" data-section="skills" class="nav-link">Skills</a>
+      <a href="#" data-section="projects" class="nav-link">Projects</a>
+      <a href="#" data-section="hackathons" class="nav-link">Hackathons</a>
+      <a href="#" data-section="leadership" class="nav-link">Leadership</a>
+      <a href="#" data-section="contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
 
-    <!-- HERO -->
-    <section class="hero">
-        <img src="Mypic.jpg" alt="Dhanyasri Bolla Profile" class="profile-pic" />
-        <h2>
-          <p>Dhanyasri Bolla</p>
-          <p> Graduate Researcher & Aspiring Engineering Manager</p>
-          </h2>
-        <p>Passionate about climate innovation, Climate Policy, Data-Driven Decision making, Corporate Finance and Systems Engineering.</p>
-      </section>
+  <!-- Hero Section -->
+  <section class="hero-new page-section active" id="hero">
+    <div class="hero-background">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    
+    <div class="hero-content">
+      <div class="hero-image-wrapper">
+        <img src="Mypic.jpg" alt="Dhanyasri Bolla" class="hero-image" />
+        <div class="image-backdrop"></div>
+      </div>
       
-  </header>
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="title-line">Dhanyasri</span>
+          <span class="title-line gradient-text">Bolla</span>
+        </h1>
+        <p class="hero-description">
+          Transforming climate data into actionable insights. Specializing in climate adaptation, 
+          data analytics, and evidence-based policy research for sustainable urban futures.
+        </p>
+        
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">43+</div>
+            <div class="stat-label">Megacities Analyzed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">430+</div>
+            <div class="stat-label">Articles Reviewed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">3.8</div>
+            <div class="stat-label">GPA</div>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#" data-section="contact" class="cta-primary hero-cta">
+            <span>Get In Touch</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#" data-section="projects" class="cta-secondary hero-cta">
+            <span>View Work</span>
+            <i class="fas fa-briefcase"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <main>
     <!-- ABOUT -->
-    <section id="about" class="section">
-      <h2>About Me</h2>
+    <section id="about" class="section-modern page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Get to Know Me</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        
+        <div class="about-box">
       <p>
         Hi! I'm Dhanyasri Bolla — an M.S. student in Engineering Management at The George Washington University and a Graduate Research Assistant at FEWS Labs (GWU).
         My work sits at the intersection of climate adaptation, data analytics, and applied policy research.
@@ -72,41 +122,63 @@
       </p>
       <p>
         When I'm not working, you’ll find me exploring urban spaces and planning community events with fellow graduate students.
-      </p>
-    </section>
+      </p>        </div>
+      </div>    </section>
 
     <!-- EDUCATION -->
-    <section id="education" class="section">
-      <h2>Education</h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3>🎓 Master of Science in Engineering Management</h3>
-          <p><strong>The George Washington University</strong><br>Washington, D.C. | December 2025 | GPA: 3.8/4.0</p>
-          <ul>
-            <li>Relevant Coursework: Marketing Analytics, R Programming, Systems Engineering, Project Management, Corporate Finance, Systems Thinking, and Policy Modelling</li>
-            <li>Capstone Project: San Diego Renewable Energy Transition Modeling - Investigated emissions and operational cost impact of transitioning to 60% renewables by 2034, projecting $1.56M in annual savings and 27,000+ metric tons of CO₂ reduction per year</li>
-          </ul>
+    <section id="education" class="section-modern page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Academic Background</span>
+          <h2 class="section-title">Education</h2>
         </div>
+        
+        <div class="education-timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2024 - 2025</div>
+              <h3>Master of Science in Engineering Management</h3>
+              <h4>The George Washington University</h4>
+              <p class="location"><i class="fas fa-map-marker-alt"></i> Washington, D.C.</p>
+              <div class="gpa-badge">GPA: 3.8/4.0</div>
+              <ul>
+                <li>Relevant Coursework: Marketing Analytics, R Programming, Systems Engineering, Project Management, Corporate Finance, Systems Thinking, and Policy Modelling</li>
+                <li>Capstone Project: San Diego Renewable Energy Transition Modeling - Investigated emissions and operational cost impact of transitioning to 60% renewables by 2034, projecting $1.56M in annual savings and 27,000+ metric tons of CO₂ reduction per year</li>
+              </ul>
+            </div>
+          </div>
 
-        <div class="card">
-          <h3>🎓 Bachelor of Technology in Electronics & Communications Engineering</h3>
-          <p><strong>Sardar Vallabhbhai National Institute of Technology</strong><br>India | May 2023 | GPA: 8.4/10.0</p>
-          <ul>
-            <li>Focus Areas: Embedded Systems, Digital Communication, Programming in C and Python</li>
-            <li>Capstone Project: 5G waveforms performance analysis over 3D channel model </li>
-          </ul>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2019 - 2023</div>
+              <h3>Bachelor of Technology in Electronics & Communications Engineering</h3>
+              <h4>Sardar Vallabhbhai National Institute of Technology</h4>
+              <p class="location"><i class="fas fa-map-marker-alt"></i> India</p>
+              <div class="gpa-badge">GPA: 8.4/10.0</div>
+              <ul>
+                <li>Focus Areas: Embedded Systems, Digital Communication, Programming in C and Python</li>
+                <li>Capstone Project: 5G waveforms performance analysis over 3D channel model</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-        <h2>Experience</h2>
+    <section id="experience" class="section-modern page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Work History</span>
+          <h2 class="section-title">Experience</h2>
+        </div>
         <div class="experience-split">
           <!-- Left: FEWS LABS -->
           <div class="experience-left card">
             <h3>🔬FEWS LABS, George Washington University</h3>
-            <p><strong>Graduate Research Assistant</strong><br>May 2024 – Present</p>
+            <p><strong>Research Data Analyst</strong><br>May 2024 – Present</p>
             <ul>
               <li>Conducted a comparative analysis of 48 megacities' climate action plans.</li>
               <li>Used Python, Excel, and Pandas with chi-square and Cramer’s V for relational insights.</li>
@@ -123,7 +195,7 @@
           <div class="experience-right">
             <div class="card">
               <h3>🌐 Business Web Solutions</h3>
-              <p><strong>Web Development Intern</strong> – June 2022 – Aug 2022</p>
+              <p><strong>Data Intern</strong> – June 2022 – Aug 2022</p>
               <p>Enhanced a tourism site’s UX using responsive HTML/CSS/JS design. Integrated APIs, optimized backend, and performed cross-browser testing.</p>
               <p><em>Technologies & Skills:</em> HTML, CSS, JS, PHP, Responsive Design</p>
             </div>
@@ -136,11 +208,16 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
       
-      
-      <section id="research" class="section">
-        <h2>Research</h2>
+    <!-- RESEARCH -->
+    <section id="research" class="section-modern page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Research Projects</span>
+          <h2 class="section-title">Research</h2>
+        </div>
         <div class="card-grid">
             <div class="card">
               <h3>Urban Giants Under Threat: Unveiling Climate Vulnerabilities & Adaptive Strategies in Megacities</h3>
@@ -184,9 +261,16 @@
             </div>
           </div>
         </div>
-      </section>
-      <section id="publications" class="section">
-        <h2>Publications</h2>
+      </div>
+    </section>
+    
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="section-modern page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Academic Work</span>
+          <h2 class="section-title">Publications</h2>
+        </div>
         <div class="card-grid">
             <div class="card">
               <h3>Urban Giants Under Threat: Unveiling Climate Vulnerabilities & Adaptive Strategies in Megacities</h3>
@@ -199,7 +283,7 @@
             <div class="card">
               <h3>Uncovering the Hidden Benefits of Adaptation</h3>
               <p>Co-Authored a research paper in association with NIST by coding and categorizing co-benefits from 430+ scientific articles.</p>
-              <p>Submitted for possible publication in Environmental Research: Climate</p>
+              <p>Published in Environmental Research: Climate</p>
               <ul>
                 <b>Abstract:</b> Adaptations to extreme weather events are increasing in prevalence across the globe. Adaptation responses can produce cobenefits, which are ancillary positive outcomes beyond the primary objectives of reducing risk and enhancing resilience.
 Despite growing attention to co-benefits in the adaptation literature, systematic analyses across adaptation types, sectors,
@@ -218,10 +302,35 @@ maximize the ancillary benefits of adaptation actions.
               </ul>
             </div>
           </div>
-      </section>
+      </div>
+    </section>
     
-  <section id="presentations" class="section">
-      <h2>Conference & Symposium Talks</h2>
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section-modern page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Professional Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <i class="fab fa-aws" style="font-size: 3rem; color: #FF9900; margin-bottom: 1rem; display: block;"></i>
+            <h3>AWS Certified Data Engineer – Associate (DEA-C01)</h3>
+            <p><strong>Amazon Web Services</strong></p>
+            <p>Validates expertise in designing, implementing, and optimizing data pipelines, ETL processes, and secure data storage solutions using core AWS services including Glue, Redshift, Athena, Lambda, DynamoDB, S3, and more.</p>
+            <p><em>Skills Demonstrated:</em> Data Pipeline Design, ETL/ELT Processes, Data Lakehouse Architecture, Serverless Computing, Cloud Security, Data Governance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- PRESENTATIONS -->
+    <section id="presentations" class="section-modern page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Speaking Engagements</span>
+          <h2 class="section-title">Conference & Symposium Talks</h2>
+        </div>
         <div class="card-grid">
           <div class="card">
             <h3>AGU 2024 Poster Presentation</h3>
@@ -246,30 +355,46 @@ maximize the ancillary benefits of adaptation actions.
             <p>Presented a poster titled <em>“Resilient Megacities”</em> at the Multilateral Financial Institutions: Chief Audit Executive Group Conference 2025 at Inter-American Development Bank, focusing on climate vulnerabilities and adaptation strategies in megacities.</p>
           </div>
         </div>
-  </section>
-    
-      
+      </div>
+    </section>
 
-      <section id="skills" class="section">
-        <h2>Skills & Tools</h2>
+    <!-- SKILLS -->
+    <section id="skills" class="section-modern page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Capabilities</span>
+          <h2 class="section-title">Skills & Tools</h2>
+        </div>
         <div class="card-grid">
+          <div class="card">
+            <h3>☁️ AWS & Cloud Data Engineering</h3>
+            <ul>
+              <li><strong>AWS Certified Data Engineer – Associate (DEA-C01)</strong></li>
+              <li>AWS Services: Glue, Redshift, Athena, DynamoDB, CloudWatch, Kinesis, Lambda, EMR, S3, Lake Formation, IAM, Step Functions, EventBridge, SNS</li>
+              <li>Metadata-Driven ETL/ELT Pipelines</li>
+              <li>Data Warehousing, Data Lakes & Lakehouse Architecture</li>
+              <li>Serverless Architecture, Parquet Optimization</li>
+            </ul>
+          </div>
       
           <div class="card">
             <h3>📊 Data Analysis & Programming</h3>
             <ul>
-              <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
-              <li>R (Tidyverse, dplyr, ggplot2)</li>
+              <li>Python (Pandas, Boto3, NumPy, Matplotlib, Seaborn, XML/JSON Parsing)</li>
+              <li>R (Tidyverse, dplyr, ggplot2, Shiny, Quarto Markdown)</li>
               <li>SQL, Spark (PySpark)</li>
               <li>Excel, Jupyter Notebooks</li>
             </ul>
           </div>
+
           <div class="card">
             <h3>🔬 Research Skills</h3>
             <ul>
               <li>Literature Review, Thematic Coding</li>
               <li>Comparative Policy Analysis</li>
               <li>Co-benefit Mapping (GAMI)</li>
-              <li>Poster Presentation (AGU 2024)</li>
+              <li>Policy Modeling, Data-Driven Research</li>
+              <li>Poster Presentation (AGU Conference 2024)</li>
             </ul>
           </div>
       
@@ -334,13 +459,78 @@ maximize the ancillary benefits of adaptation actions.
               <li>Time & Project Management</li>
             </ul>
           </div>
-      
         </div>
-      </section>
+      </div>
+    </section>
       
-      <section id="projects" class="section">
-        <h2>Projects</h2>
+    <!-- PROJECTS -->
+    <section id="projects" class="section-modern page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Portfolio</span>
+          <h2 class="section-title">Projects</h2>
+        </div>
         <div class="card-grid">
+            <div class="card">
+              <h3>☁️ Metadata-Driven Energy & Climate Data Lakehouse (AWS)</h3>
+              <p><strong>AWS Serverless Data Engineering Project</strong></p>
+              <ul>
+                <li><strong>Architecture:</strong> Designed a serverless ingestion framework using AWS Glue (Python Shell) and DynamoDB to dynamically fetch data from disparate sources (XML/JSON APIs) without hard-coding logic.</li>
+                <li><strong>Ingestion Engine:</strong> Built a resilient Python pipeline handling legacy API constraints (CAISO), implementing dynamic date parameter injection and automated SSL certificate handling for strict utility gateways.</li>
+                <li><strong>Complex Transformation:</strong> Engineered a custom "Brute Force" XML parser in Python to resolve schema drift and namespace conflicts in energy data, normalizing it alongside nested weather JSON into a unified Silver Layer (Parquet).</li>
+                <li><strong>Analytics & Insights:</strong> Leveraged AWS Athena (SQL) to perform cross-domain analysis, using ISO 8601 timestamp parsing to correlate solar radiation spikes with real-time grid load fluctuations.</li>
+              </ul>
+              <p><em>Technologies & Skills:</em> AWS (Glue, DynamoDB, Athena, S3, Lake Formation), Python, Pandas, Boto3, Parquet, ETL Pipelines, Data Lakehouse Architecture</p>
+            </div>
+
+            <div class="card">
+              <h3>⚡ Serverless Green Energy Arbitrage Engine (AWS)</h3>
+              <p><strong>AWS Lambda Event-Driven Pipeline</strong></p>
+              <ul>
+                <li>Engineered a fully automated, serverless ETL pipeline utilizing AWS Lambda and EventBridge to continuously extract live hourly electrical grid fuel-mix data via the EIA REST API.</li>
+                <li>Transformed and aggregated data using Python and Pandas (via custom Lambda Layers), implementing strict type-casting to calculate real-time carbon intensity metrics (gCO2/kWh).</li>
+                <li>Architected a NoSQL data storage solution in Amazon DynamoDB, optimizing partition and sort keys for time-series data to build a historical environmental dataset.</li>
+                <li>Deployed an event-driven alerting system via Amazon SNS with IAM-authenticated subscriptions, triggering automated notifications to optimize energy consumption during low-emission windows.</li>
+              </ul>
+              <p><em>Technologies & Skills:</em> AWS Lambda, EventBridge, DynamoDB, SNS, IAM, Python, Pandas, REST APIs, Serverless Architecture, Event-Driven Design</p>
+            </div>
+
+            <div class="card">
+              <h3>💹 Real-Time Financial Risk Engine (AWS Serverless)</h3>
+              <p><strong>Monte Carlo Simulation & Portfolio Risk Assessment</strong></p>
+              <ul>
+                <li><strong>Architecture:</strong> Designed a serverless pipeline using AWS Lambda, EventBridge, and SNS to automate daily portfolio risk assessment.</li>
+                <li><strong>Quantitative Finance:</strong> Implemented a Monte Carlo Simulation (1,000 runs) using NumPy/Pandas to calculate Value at Risk (VaR) with a 95% confidence interval.</li>
+                <li><strong>Data Engineering:</strong> Integrated external financial APIs (Alpha Vantage) with robust error handling, rate-limiting logic, and custom Lambda Layers for dependency management.</li>
+                <li><strong>DevOps:</strong> Automated daily cron schedules via EventBridge and configured real-time alerts via Amazon SNS for high-volatility events.</li>
+              </ul>
+              <p><em>Technologies & Skills:</em> AWS Lambda, EventBridge, SNS, Python, NumPy, Pandas, Monte Carlo Simulation, VaR, Quantitative Finance, API Integration</p>
+            </div>
+
+            <div class="card">
+              <h3>🤖 Project ANDRA: Real-Time Multimodal Threat Detection Agent</h3>
+              <p><strong>Hoya Hacks 2026 - AI/Computer Vision Project</strong></p>
+              <ul>
+                <li>Engineered a real-time event-driven pipeline integrating computer vision (YOLOv8, OpenCV) with LLM reasoning (Google Gemini 2.0 Flash) to continuously assess spatial threat proximity via webcam feeds.</li>
+                <li>Architected an asynchronous state-machine that processes asynchronous audio/video streams, utilizing dynamic bounding-box logic to trigger distinct AI behavioral modes.</li>
+                <li>Integrated telecommunications automation via the Twilio API, deploying a "dead man's switch" protocol that automatically dispatches emergency voice calls based on sustained audio-silence detection.</li>
+              </ul>
+              <p><em>Technologies & Skills:</em> Python, YOLOv8, OpenCV, Google Gemini AI, Twilio API, Computer Vision, LLM Integration, Real-Time Processing, Asynchronous Programming</p>
+            </div>
+
+            <div class="card">
+              <h3>📊 Scootistic DC: Multi-Modal Ride Service Analysis</h3>
+              <p><strong>Marketing Analytics & Design Decisions Project - GWU</strong></p>
+              <ul>
+                <li>Designed a conjoint survey to assess consumer preferences for an integrated subscription service across providers like Capital Bikeshare, Lime, and Veo.</li>
+                <li>Modeled key attributes: vehicle type options (bike/scooter/both), ride duration caps (30/60/180 minutes), and extended ride fees ($1/$5/$10 per extra minute).</li>
+                <li>Conducted regression analysis and visualized coefficient estimates with 95% confidence intervals to evaluate impact of ride characteristics on user choice.</li>
+                <li>Performed power analysis to determine optimal sample size (450–500), with attention to the high variability in "Vehicle type : Both" preferences.</li>
+                <li>Proposed pricing strategies and platform partnership models to enhance convenience, retention, and manufacturer insight into user trends.</li>
+              </ul>
+              <p><em>Technologies & Skills:</em> R Programming, Conjoint Analysis, Regression Analysis, Survey Design, Statistical Modeling, Power Analysis, Marketing Analytics</p>
+            </div>
+
             <div class="card">
                 <h3>🔋 San Diego Renewable Energy Transition</h3>
                 <p><strong>Capstone Project</strong></p>
@@ -397,14 +587,29 @@ maximize the ancillary benefits of adaptation actions.
             <p>An AI-powered web dashboard that analyzes climate adaptation plans using Large Language Models (LLMs) to extract structured insights from unstructured policy documents. The tool automatically classifies content into four core categories — climate risks, infrastructure systems, financial sources, and stakeholders — and provides LLM-generated summaries of each city's strengths and planning gaps.</p>
             <p><em>Technologies & Skills:</em> Flask, OpenAI API, PyMuPDF, Geopy, Leaflet.js, Bootstrap, JavaScript, HTML, CSS</p>
           </div>
-      
         </div>
-      </section>
+      </div>
+    </section>
       
-      <!-- Hackathons Section -->
-      <section id="hackathons" class="section">
-        <h2>Hackathons</h2>
+    <!-- HACKATHONS -->
+    <section id="hackathons" class="section-modern page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Competitions</span>
+          <h2 class="section-title">Hackathons</h2>
+        </div>
         <div class="card-grid">
+          <div class="card">
+            <h3>🤖 Hoya Hacks 2026 - Georgetown University</h3>
+            <p><strong>Project ANDRA: Real-Time Multimodal Threat Detection Agent</strong></p>
+            <ul>
+              <li>Engineered a real-time event-driven pipeline integrating computer vision (YOLOv8, OpenCV) with LLM reasoning (Google Gemini 2.0 Flash) to assess spatial threat proximity.</li>
+              <li>Architected an asynchronous state-machine processing audio/video streams with dynamic bounding-box logic.</li>
+              <li>Integrated Twilio API for emergency telecommunications automation with "dead man's switch" protocol.</li>
+            </ul>
+            <p><em>Technologies & Skills:</em> Python, YOLOv8, OpenCV, Google Gemini AI, Twilio API, Computer Vision, Real-Time Processing</p>
+          </div>
+
           <div class="card">
             <h3>Cerebral Valley AI Fintech Hackathon 2025 - New York City</h3>
             <p><strong>Participant</strong></p>
@@ -416,34 +621,44 @@ maximize the ancillary benefits of adaptation actions.
             <p><em>Technologies & Skills:</em> Python, FastAPI, MySQL, PyMySQL, Cloudinary, Docker, Git, GitHub, VS Code.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
       
-      <section id="leadership" class="section">
-        <h2>Leadership</h2>
+    <!-- LEADERSHIP -->
+    <section id="leadership" class="section-modern page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Community Impact</span>
+          <h2 class="section-title">Leadership</h2>
+        </div>
         <div class="card-grid">
       
           
       
           <div class="card">
             <h3>🌟 Vice President</h3>
-            <p><strong>Desis Organization, George Washington University</strong><br>Oct 2024 – Present</p>
-            <p>Led planning, budgeting, and community initiatives for 250+ Indian graduate students. Oversaw board recruitment, managed member engagement, and executed cultural programs to strengthen campus inclusivity and connection.</p>
-            <p><em>Skills:</em> Leadership, Community Engagement, Project Coordination, Team Management, Event Strategy</p>
+            <p><strong>The George Washington University Desis Organization</strong><br>October 2024 – January 2026 | Washington, DC</p>
+            <p>Led planning, budgeting, managing member engagement and recruitment of executive board, ensuring smooth operations and initiatives to foster community among 250+ graduate Indian students.</p>
+            <p><em>Skills:</em> Leadership, Community Engagement, Project Coordination, Team Management, Event Strategy, Budgeting</p>
           </div>
 
           <div class="card">
             <h3>💰 Financial Officer</h3>
-            <p><strong>Google Developer Student Club, George Washington University</strong><br>Oct 2024 – Present</p>
-            <p>Managed budgeting, fund allocation, and payment tracking for campus events involving 150+ participants. Collaborated with multiple student teams to ensure timely financial planning and vendor coordination while maintaining transparency and cost efficiency.</p>
+            <p><strong>Google Developer Student Club, George Washington University</strong><br>October 2024 – January 2026 | Washington, DC</p>
+            <p>Managed the budgeting, allocation, and tracking of funds for large-scale on-campus events with over 150+ participants. Coordinated with multiple teams to ensure proper financial planning and vendor payments, maintaining transparency and cost efficiency.</p>
             <p><em>Skills:</em> Budgeting, Event Planning, Financial Oversight, Collaboration, Reporting</p>
           </div>
-      
         </div>
-      </section>
-      
+      </div>
+    </section>
 
-      <section id="contact" class="section">
-        <h2>Contact</h2>
+    <!-- CONTACT -->
+    <section id="contact" class="section-modern page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Contact</h2>
+        </div>
         <form id="contact-form" action="https://formspree.io/f/xwplaaoz" method="POST">
           <div class="form-group">
             <label for="name">Your Name</label>
@@ -487,8 +702,8 @@ maximize the ancillary benefits of adaptation actions.
           <a href="https://github.com/dhanyasri135" target="_blank">GitHub</a>
         </div>
       </div>
-      
-      
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -496,27 +711,112 @@ maximize the ancillary benefits of adaptation actions.
   </footer>
 
   <!-- Back to Top Button -->
-  <button id="back-to-top" title="Back to Top" style="display:none;position:fixed;bottom:32px;right:32px;z-index:1000;padding:12px 18px;border-radius:50%;background:#222;color:#fff;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.2);font-size:22px;cursor:pointer;">
+  <button id="back-to-top" title="Back to Top" style="display:none;">
     <i class="fas fa-arrow-up"></i>
   </button>
 
   <script>
-    const toggleBtn = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
-
-    toggleBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
+    // Tab-based Navigation System
+    const navLinksContainer = document.getElementById('nav-links');
+    const navLinkItems = document.querySelectorAll('.nav-link');
+    const pageSections = document.querySelectorAll('.page-section');
+    
+    // Function to show a specific section
+    function showSection(sectionId) {
+      // Hide all sections
+      pageSections.forEach(section => {
+        section.classList.remove('active');
+      });
+      
+      // Remove active class from all nav links
+      navLinkItems.forEach(link => {
+        link.classList.remove('active');
+      });
+      
+      // Show the selected section
+      const targetSection = document.getElementById(sectionId);
+      if (targetSection) {
+        targetSection.classList.add('active');
+        
+        // Scroll to top smoothly
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        
+        // Trigger fade-in animations for cards in the new section
+        setTimeout(() => {
+          const cards = targetSection.querySelectorAll('.card, .timeline-item, .highlight-card');
+          cards.forEach((card, index) => {
+            setTimeout(() => {
+              card.classList.add('fade-in');
+            }, index * 100);
+          });
+        }, 100);
+      }
+    }
+    
+    // Navigation click handlers
+    navLinkItems.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const sectionId = link.getAttribute('data-section');
+        
+        // Add active class to clicked link
+        link.classList.add('active');
+        
+        // Show the corresponding section
+        showSection(sectionId);
+        
+        // Close mobile menu if open
+        if (navLinksContainer.classList.contains('active')) {
+          navLinksContainer.classList.remove('active');
+        }
+      });
     });
+
+    // Hero CTA buttons (Get In Touch, View Work)
+    const heroCtaButtons = document.querySelectorAll('.hero-cta');
+    heroCtaButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const sectionId = button.getAttribute('data-section');
+        
+        // Show the corresponding section (this also removes active from all nav links)
+        showSection(sectionId);
+        
+        // Then find and activate the corresponding nav link
+        navLinkItems.forEach(link => {
+          if (link.getAttribute('data-section') === sectionId) {
+            link.classList.add('active');
+          }
+        });
+      });
+    });
+
+    // Mobile menu toggle
+    const toggleBtn = document.getElementById('menu-toggle');
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        navLinksContainer.classList.toggle('active');
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!toggleBtn.contains(e.target) && !navLinksContainer.contains(e.target)) {
+          navLinksContainer.classList.remove('active');
+        }
+      });
+    }
 
     // Back to Top Button Logic
     const backToTopBtn = document.getElementById('back-to-top');
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 500) {
         backToTopBtn.style.display = 'block';
       } else {
         backToTopBtn.style.display = 'none';
       }
     });
+    
     backToTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
